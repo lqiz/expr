@@ -18,3 +18,4 @@ I believe it satisfy most filter scenarios using rule engine for logical express
 		result, err := engine.RunRule(v.control)
 
 the ast parser using Golang go/ast and go/parser, rule can be update using engine.UpdateAst to avoid parse the rule each time.
+more demo please refer to the expr_test.go
