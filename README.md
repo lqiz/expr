@@ -9,7 +9,7 @@ Support two inner funnction: in_arr(1, []int{1,2,3,4}), ver_comp(x, ">", "10.1.1
 
 I believe it satisfy most filter scenarios using rule engine for logical expression. 
 
-Finally, *Welcome contribution or requirement*.
+Finally, **Welcome contribution or requirement**.
 
 # How to use it 
 
