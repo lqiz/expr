@@ -5,7 +5,7 @@ Support type: int string
 
 Support operation: > < >= <= && ||
 
-Support two inner funnction: in_arr(1, []int{1,2,3,4}), ver_comp(x, ">", "10.1.1") with no nested
+Support two inner funnction: in_array(1, []int{1,2,3,4}), ver_compare(x, ">", "10.1.1") with no nested
 
 I believe it satisfy most filter scenarios using rule engine for logical expression. 
 
