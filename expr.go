@@ -3,7 +3,7 @@ package expr
 import (
 	"errors"
 	. "fmt"
-	"github.com/luoruiyi/expr/node"
+	"github.com/lqiz/expr/node"
 	"go/ast"
 	"go/parser"
 )

@@ -2,7 +2,7 @@ package expr
 
 import (
 	"fmt"
-	"github.com/luoruiyi/expr/node"
+	"github.com/lqiz/expr/node"
 	"go/ast"
 	"go/token"
 	"strings"
