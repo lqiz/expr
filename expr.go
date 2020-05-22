@@ -2,8 +2,8 @@ package expr
 
 import (
 	"errors"
-	"expr/node"
 	. "fmt"
+	"github.com/luoruiyi/expr/node"
 	"go/ast"
 	"go/parser"
 )

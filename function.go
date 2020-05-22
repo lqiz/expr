@@ -1,8 +1,8 @@
 package expr
 
 import (
-	"expr/node"
 	"fmt"
+	"github.com/luoruiyi/expr/node"
 	"go/ast"
 	"go/token"
 	"strings"
