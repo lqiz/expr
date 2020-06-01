@@ -15,7 +15,7 @@ type BinaryStrExpr struct{}
 type BinaryIntExpr struct{}
 
 type CallExpr struct {
-	fn   string // one of "pow", "sin", "sqrt"
+	fn   string // one of "in_array", "ver_compare"
 	args []ast.Expr
 }
 
