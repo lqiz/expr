@@ -64,6 +64,12 @@ func parseControlMap(controlMap map[string]interface{}) map[string]node.ValueNod
 		case int64:
 			node := node.NewIntNode(control.(int64))
 			nodeMap[key] = node
+
+		case float64:
+			// value from json will be always float64
+			node := node.NewIntNode(int64(control.(float64)))
+			nodeMap[key] = node
+
 		case string:
 			node := node.NewStrNode(control.(string))
 			nodeMap[key] = node
@@ -80,6 +86,10 @@ func eval(mem map[string]node.ValueNode, expr ast.Expr) (y node.ValueNode) {
 		a := eval(mem, x.X)
 		b := eval(mem, x.Y)
 		op := x.Op
+
+		if a == nil || b == nil {
+			return node.NewBadNode(Sprintf("%+v, %+v is nil", a, b))
+		}
 
 		switch a.GetType() {
 		case node.TypeInt64:
