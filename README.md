@@ -21,3 +21,10 @@ Finally, Welcome **contribution or requirement**.
 
 the ast parser using Golang go/ast and go/parser, rule can be update using engine.UpdateAst to avoid parse the rule each time.
 more demo please refer to the expr_test.go
+
+# Contributing
+Pull requests, bug fixes and issue reports are welcome and appreciated.
+
+# Licence
+MIT
+
